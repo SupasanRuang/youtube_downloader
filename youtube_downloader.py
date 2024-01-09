@@ -18,7 +18,7 @@ def progress_function(chunk, file_handle, bytes_remaining):
 i=0
 with open(file_path_read, "r") as file:
     for line in file:
-        # link="https://www.youtube.com/watch?v=M7YTcbOzj2M"
+        
         link = line.strip() 
         yt =YouTube(link, on_progress_callback = progress_function)
         # yt_HD=yt.streams.filter(file_extension='mp4')
